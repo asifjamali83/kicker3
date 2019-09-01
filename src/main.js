@@ -8,7 +8,7 @@ const rp = require('request-promise');
 const config = require('./config');
 const { Message, OpType, Location } = require('../curve-thrift/line_types');
 //let exec = require('child_process').exec;
-const myBot = ['ua964a331a23e8cb551d7772a287b878a'];
+const myBot = ['mid yaha lagana'];
 const banList = [];//Banned list
 var groupList = new Array();//Group list
 var vx = {};var midnornama,pesane,kickhim;var waitMsg = "no";//DO NOT CHANGE THIS
@@ -79,7 +79,7 @@ class LINE extends LineAPI {
 ⍟ Kick Command :\n\n\
       • Kickme\n\
       • Clearinvite\n\
-      • Maxkick\n\
+      • koko\n\
       ";
         var that = this;
     }
@@ -1632,7 +1632,7 @@ Link Download: "+idU.id+"\n";
             })
         }*/
 
-        if(txt === '.koko' && this.stateStatus.kick == 1 && isAdminOrBot(seq.from_) && seq.toType == 2) {
+        if(txt === 'koko' && this.stateStatus.kick == 1 && isAdminOrBot(seq.from_) && seq.toType == 2) {
             let { listMember } = await this.searchGroup(seq.to);
             for (var i = 0; i < listMember.length; i++) {
                 if(!isAdminOrBot(listMember[i].mid)){
